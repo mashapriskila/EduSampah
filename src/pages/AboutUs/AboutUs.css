@@ -1,49 +1,92 @@
-.pageAboutUs {
+
+.section-aboutus{
+	width: 100%;
+	min-height: 60vh;
     margin-top: 50px;
-    margin-bottom: 150px;
+    margin-bottom: 70px;
 }
 
-.pageAboutUs .ourTeam {
-    top: 200px;
+.container-aboutus{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top: 100px;
 }
-
-.pageAboutUs .ourTeam h1 {
-    text-align: center;
-    font-size: 34px;
+.AboutUs{
+	float: left;
+	width: 55%;
+    margin-left: 30px;
+    font-family: 'Work Sans';
+}
+   
+.aboutUsLogo{
+	float: right;
+	width: 20%;
+    margin-top: 30px;
+    margin-right: 80px;
+}
+.aboutUsLogo img{
+	width: 100%;
+	height: auto;
+}
+.AboutUs .title{
+	font-size: 20px;
     color: #002F05;
+    margin: 0;
 }
 
-.pageAboutUs .ourTeam .groupCard {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
+.AboutUs .content p{
+	margin-top: 10px;
+	font-size: 14px;
+	line-height: 1.5;
+    color: #002F05;
+    text-align: justify;
 }
 
-@media screen and (max-width: 768px){
-    .pageAboutUs .ourTeam h1 {
-        font-size: 30px;
-        margin-top: 50px;
-        margin-bottom: 30px;
-    }
-
-    .pageAboutUs .ourTeam .groupCard {
-        display: grid;
-    }
+.AboutUs .social{
+	margin: 40px 0;
 }
 
-@media screen and (max-width: 550px){
-
-    .pageAboutUs .ourTeam .groupCard {
-        display: grid;
-        margin: 0 auto;
+.AboutUs .social i{
+	color:#27AE60;
+	font-size: 30px;
+	padding-right: 20px;
+}
+.AboutUs .social i:hover{
+	color:#00910e;
+}
+@media screen and (max-width: 768px) {
+	.container{
+        width: 80%;
+        display: block;
+        margin:auto;
+        padding-top:50px;
+    }
+    .AboutUs{
+        float:none;
+        width:100%;
+        display: block;
+        margin:auto;
+    }
+    .aboutUsLogo{
+        float:none;
+        margin: 20px auto;
+        width:50%;
+        
+    }
+    .aboutUsLogo img{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin:auto;
+    }
+    .AboutUs .title{
+        text-align: center;
+        font-size: 19px;
     }
 
-    .pageAboutUs .ourTeam .groupCard img {
-        width: 70%;
+    .AboutUs .social{
+        text-align: center;
     }
 
-    .pageAboutUs .ourTeam .groupCard name {
-        font-size: 10px;
-    }
 }

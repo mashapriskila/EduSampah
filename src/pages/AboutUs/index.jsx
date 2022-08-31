@@ -1,17 +1,17 @@
 import React from "react";
-import './HomeAboutUs.css';
+import './AboutUs.css';
 import AboutUs from '../../assets/Logo/AboutUs.png';
 
-const HomeAboutUs = () => {
+const PageAboutUs = () => {
     return (
-        <div className="section">
-			<div className="container">
-				<div className="homeAboutUs">
+        <div className="section-aboutus">
+			<div className="container-aboutus">
+				<div className="AboutUs">
 					<div className="title">
 						<h1>Tentang Kami</h1>
 					</div>
 					<div className="content">
-						<p>Bang Eco adalah sebuah website yang bertujuan untuk memberikan edukasi tentang pengelolaan sampah dengan baik dan informasi terkini seputar sampah kepada masyarakat. Mulai dari edukasi mengenai cara pemisahan limbah atau sampah yang reusable dan zero waste, cara penerapan zero waste lifestyle hingga dampak-dampak positif dan negatif yang akan diterima kita sebagai manusia dan lingkungan.</p>
+						<p>EduSampah adalah sebuah website yang bertujuan untuk memberikan edukasi tentang pengelolaan sampah dengan baik dan informasi terkini seputar sampah kepada masyarakat. Mulai dari edukasi mengenai cara pemisahan limbah atau sampah yang reusable dan zero waste, cara penerapan zero waste lifestyle hingga dampak-dampak positif dan negatif yang akan diterima kita sebagai manusia dan lingkungan.</p>
 					</div>
 					<div className="social">
 						<a href='https://www.facebook.com/'><i className="fa-brands fa-facebook-square"></i></a>
@@ -28,4 +28,4 @@ const HomeAboutUs = () => {
     )
 }
 
-export default HomeAboutUs;
+export default PageAboutUs;

@@ -5,15 +5,16 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
+
 export function FooterContainer() {
     return (
         <Footer>
             <Footer.Wrapper>
                 <Footer.Row>
                     <Footer.Column1>
-                        <Footer.Title><img src={require("../assets/Logo/Logo-Recovered-shadow2.png")} alt="" /></Footer.Title>
-                        <Footer.Link>Bang Eco adalah sebuah website yang bertujuan untuk memberikan edukasi tentang pengelolaan sampah dengan baik dan informasi terkini seputar sampah kepada masyarakat. Mulai dari edukasi mengenai cara pemisahan limbah atau sampah yang reusable dan zero waste, cara penerapan zero waste lifestyle hingga dampak-dampak positif dan negatif yang akan diterima kita sebagai manusia dan lingkungan.</Footer.Link>
-                        </Footer.Column1>
+                        <Footer.Title><img src={require("../assets/Logo/EduSampah.png")} alt="" /></Footer.Title>
+                        <Footer.Link>EduSampah adalah sebuah website yang bertujuan untuk memberikan edukasi tentang pengelolaan sampah dengan baik dan informasi terkini seputar sampah kepada masyarakat. Mulai dari edukasi mengenai cara pemisahan limbah atau sampah yang reusable dan zero waste, cara penerapan zero waste lifestyle hingga dampak-dampak positif dan negatif yang akan diterima kita sebagai manusia dan lingkungan.</Footer.Link>
+                    </Footer.Column1>
                     <Footer.Column2>
                         <Footer.Title>MENU</Footer.Title>
                         <Footer.Link href="./">Beranda</Footer.Link>
@@ -25,7 +26,7 @@ export function FooterContainer() {
                     <Footer.Column3>
                         <Footer.Title>HUBUNGI KAMI</Footer.Title>
                         <Footer.Link>Telp: 08123456789</Footer.Link>
-                        <Footer.Link>Email: bangeco@email.com</Footer.Link>
+                        <Footer.Link>Email: edusampah@email.com</Footer.Link>
                         <Footer.Link>Alamat: Jl. Jendral Sudirman No.10, Jakarta</Footer.Link>
                         <Footer.Wrapper1>
                             <Footer.Column5><Footer.Link href="https://www.facebook.com/"><FacebookIcon fontSize='medium'/></Footer.Link></Footer.Column5>
@@ -39,7 +40,7 @@ export function FooterContainer() {
 
             <Footer.Wrapper>
                 <Footer.Column4>
-                    <Footer.Link>Copyright © 2022. Bang Eco. All rights reserved.</Footer.Link>
+                    <Footer.Link>Copyright © 2022. EduSampah. All rights reserved.</Footer.Link>
                 </Footer.Column4>
             </Footer.Wrapper>
         </Footer>

@@ -2,19 +2,21 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import Navbar from "./components/Navbar";
 import Hero from './components/Hero';
-import HomeAboutUs from './components/HomeAboutUs';
+
 import PageAboutUs from './pages/AboutUs';
 import ReqDonation from './components/ReqDonation';
 import InfoDonasi from './components/InfoDonasi';
 import Berita from './components/News';
-import DonationArticle from './pages/AllDonation/InfoDonation';
-import NewsArticle from './pages/AllNews/News';
+import DonationArticle from './pages/AllDonation/DonationArticle';
+import NewsArticle from './pages/AllNews/NewsArticle';
 import {FooterContainer} from './containers/Footer';
 import TableComponent from './components/Table';
 import Education from './components/Education'
-import SinglePost from './pages/SinglePost/SinglePost';
-import EducationPage from './pages/AllEducation/Education';
+import SinglePost from './pages/SinglePost1/SinglePost';
+import EducationPage from './pages/AllEducation/EducationPage.js';
 import DetailDonasi from './components/PageDetailDonasi';
+import VideoPage from './pages/VideoPage/VideoPage';
+
 
 function App() {
   return (
@@ -27,7 +29,6 @@ function App() {
           <InfoDonasi/>
           <Berita/>
           <Education />
-          <HomeAboutUs />
         </Route>
         <Route exact path="/post/:id" component={SinglePost} />
         <Route path='/AllEdukasi'>
@@ -35,6 +36,9 @@ function App() {
         </Route>
         <Route path='/AllNews'>
           <NewsArticle/>
+        </Route>
+        <Route path='/VideoPage'>
+          <VideoPage />
         </Route>
         <Route path='/PageDetailDonasi'>
           <DetailDonasi />

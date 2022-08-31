@@ -1,6 +1,6 @@
     import React from "react";
     import './Navbar.css';
-    import Logo from '../../assets/Logo/Logo-Recovered-shadow2.png';
+    import Logo from '../../assets/Logo/EduSampah.png';
 
     const Navbar = () => {
         return (
@@ -14,6 +14,7 @@
                         <li><a href="./">BERANDA</a></li>
                         <li><a href="./AllEdukasi">EDUKASI</a></li>
                         <li><a href="./AllNews">BERITA</a></li>
+                        <li><a href="./VideoPage">VIDEO</a></li>
                         <div className="dropdown">
                             <button className="dropbtn">DONASI
                                 <i className="fa fa-caret-down"></i>

@@ -28,7 +28,7 @@ class SinglePost extends React.Component {
 
 	componentDidMount() {
         const wordPressSiteURL = 'https://bangeco.dezign.id';
-        // console.warn( this.props.match.params.id );
+        
 		this.setState( { loading: true }, () => {
 			axios.get( `${wordPressSiteURL}/wp-json/wp/v2/posts/${this.props.match.params.id}` )
 				.then( res => {
@@ -56,7 +56,7 @@ class SinglePost extends React.Component {
                     <Box sx={{ flexGrow: 1 }}>
                     <Grid container spacing={2}>
                     <Grid item xs={12}>
-                                {/* <Card key={ post.id } sx={{ maxWidth: 345 }}> */}
+                             
                                 <Card style={{padding: '80px 0'}} key={ post.id }>
                                     <CardMedia
                                     component="img"

@@ -9,8 +9,12 @@
 }
 
 iframe {
-    margin-left: -20px;
+    margin-left: -40px;
     margin-top: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 15px;
     
 }
+
+/* iframe::-webkit-scrollbar{
+ display: none;
+} */

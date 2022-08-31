@@ -1,7 +1,6 @@
 import React from 'react';
 import axios from 'axios';
 import renderHTML from 'react-render-html';
-// import Moment from 'react-moment';
 
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -12,8 +11,7 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 
-class NewsArticle extends React.Component {
-    // state = {  } 
+class VideoPage extends React.Component {
 
 constructor( props ) {
     super( props );
@@ -29,12 +27,10 @@ createMarkup = ( data ) => ({
     __html: data
 });
 
-// https://bangeco.dezign.id/wp-json/wp/v2/posts?categories=3&per_page=5
-
     componentDidMount() {
         const wordPressSiteURL = 'https://bangeco.dezign.id';
         this.setState( { loading: true }, () =>{
-            axios.get( `${wordPressSiteURL}/wp-json/wp/v2/posts?categories=4` )
+            axios.get( `${wordPressSiteURL}/wp-json/wp/v2/posts?categories=7` )
             .then( res => {
                 if ( 200 === res.status ) {
                     if ( res.data.length ) {
@@ -61,12 +57,11 @@ createMarkup = ( data ) => ({
                 <Box margin='100px 100px' sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant="h1"
 					style={{margin: '30px auto', fontSize: 30, fontWeight: 700, textAlign: ''}}
-                    >All News
+                    >Video for Waste Education
                     </Typography>
                    <Grid container spacing={2}>
                         { posts.map( post => (
                             <Grid item xl={3} md={4} sm={6} xs={12}>
-                                {/* <Card key={ post.id } sx={{ maxWidth: 345 }}> */}
                                 <Card key={ post.id }>
                                     <CardMedia
                                     component="img"
@@ -75,18 +70,18 @@ createMarkup = ( data ) => ({
                                     />
                                     <CardContent>
                                     <Typography gutterBottom variant="h5">
-                                    <a href={`/post/${post.id}`}>
+                                        <a href={`/post/${post.id}`}>
                                         {renderHTML( post.title.rendered )}
-                                    </a>
+                                        </a>
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary">
                                         {renderHTML( post.excerpt.rendered )} 
                                     </Typography>
                                     </CardContent>
                                     <CardActions>
-                                    <a href={`/post/${post.id}`}>
+                                         <a href={`/post/${post.id}`}>
                                         <Button size="small">Selengkapnya</Button>
-                                    </a>
+                                        </a>
                                     </CardActions>
                             </Card> 
                             </Grid>
@@ -101,4 +96,4 @@ createMarkup = ( data ) => ({
     }
 }
  
-export default NewsArticle;
+export default VideoPage;
