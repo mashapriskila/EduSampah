@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-//import './Table.css';
 import MUIDataTable from 'mui-datatables';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import bekasi_bank_sampah from '../../data/bekasi_bank_sampah.json';

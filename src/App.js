@@ -17,6 +17,7 @@ import EducationPage from './pages/AllEducation/EducationPage.js';
 import VideoPage from './pages/VideoPage/VideoPage';
 import Video from './components/CardVideo/Video';
 import HomeAboutUs from './components/HomeAboutUs';
+import Edukasi2 from './pages/AllEducation/Edukasi2';
 
 
 function App() {
@@ -36,6 +37,9 @@ function App() {
         <Route exact path="/post/:id" component={SinglePost} />
         <Route path='/AllEdukasi'>
           <EducationPage/>
+        </Route>
+        <Route path='/AllEdukasi2'>
+          <Edukasi2/>
         </Route>
         <Route path='/AllNews'>
           <NewsArticle/>

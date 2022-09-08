@@ -13,7 +13,7 @@ import Box from '@mui/material/Box';
 
 
 
-class EducationPage extends React.Component {
+class Edukasi2 extends React.Component {
 
 constructor( props ) {
     super( props );
@@ -32,7 +32,7 @@ createMarkup = ( data ) => ({
     componentDidMount() {
         const wordPressSiteURL = 'https://bangeco.dezign.id';
         this.setState( { loading: true }, () =>{
-            axios.get( `${wordPressSiteURL}/wp-json/wp/v2/posts?categories=3` )
+            axios.get( `${wordPressSiteURL}/wp-json/wp/v2/posts?categories=8` )
             .then( res => {
                 if ( 200 === res.status ) {
                     if ( res.data.length ) {
@@ -64,7 +64,7 @@ createMarkup = ( data ) => ({
                    <Grid container spacing={2}>
                         { posts.map( post => (
                             <Grid item xl={3} md={4} sm={6} xs={12}>
-                                <Card key={ post.id }>
+                                <Card key={ post.id } style={{ height: '100%' }} >
                                     <CardMedia
                                     component="img"
                                     height="140"
@@ -91,18 +91,18 @@ createMarkup = ( data ) => ({
                         ))}
                        
                     </Grid>
-                        <Box
+                     <Box
                         m={1}
                         //margin
                         display="flex"
                         justifyContent="flex-end"
                         alignItems="flex-end"
                         >
-                        <a href='./AllEdukasi2'>
+                        <a href='./AllEdukasi'>
                             <br/>
-                            <Button size="small"> 1/2 </Button>
+                             <Button size="small"> 2/2 </Button>
                             <Button variant="contained" color="success" >
-                            Halaman Selanjutnya
+                            Halaman Sebelumnya
                             </Button>
                         </a>
                         </Box>
@@ -117,4 +117,4 @@ createMarkup = ( data ) => ({
     }
 }
  
-export default EducationPage;
+export default Edukasi2;
