@@ -42,12 +42,12 @@ class Education extends React.Component {
 
         render() { 
             const slideEduLeft =()=> {
-                var slider = document.getElementById("sliderEdu");
+                let slider = document.getElementById("sliderEdu");
                 slider.scrollLeft = slider.scrollLeft - 500
         
             }
             const slideEduRight = () => {
-                var slider = document.getElementById("sliderEdu");
+                let slider = document.getElementById("sliderEdu");
                 slider.scrollLeft = slider.scrollLeft + 500;
                 
             }

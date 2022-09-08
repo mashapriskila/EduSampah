@@ -1,14 +1,10 @@
-// import './App.css';
 import React from 'react';
-//import MUIDataTable from 'mui-datatables';
 import { useState } from "react";
 import Button from '@mui/material/Button';
 import { useSelector, useDispatch } from "react-redux";
 import saveLocation from '../../store/action';
 import Table from './Table';
-//import { createTheme, ThemeProvider } from '@mui/material/styles';
-//import data from '../../data';
-import './Table.css'
+import './Table.css';
 
 function TableComponent() {
   const dispatch = useDispatch()
@@ -18,15 +14,7 @@ function TableComponent() {
   const [buttonStyle4, setButtonStyle4] = useState('outlined')
   const [buttonStyle5, setButtonStyle5] = useState('outlined')
 
-// <<<<<<< HEAD
-//   const options = {
-//     selectableRows: 'none',
-//     searchAlwaysOpen: true,
-//     searchPlaceholder: 'Masukan kecamatan atau kelurahan anda',
-//     print: false,
-//     download: false,
-//   };
-// =======
+
   const handleBekasi = () => {
     dispatch(saveLocation('bekasi'))
     setButtonStyle1('contained')

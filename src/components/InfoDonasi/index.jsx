@@ -1,5 +1,5 @@
 import React from 'react';
-import CardSlider from "./Card";
+import Card from "./Card";
 import "./Slider.css";
 
 const InfoDonasi = () => {
@@ -7,7 +7,7 @@ const InfoDonasi = () => {
         <div className='layout'>
             <p id="info-donasi">Informasi Donasi</p>
             <div className="card">
-                <CardSlider/>
+                <Card/>
                 <div className="btn-more-wrap">
                 <a href="/AllDonationPage"><button>Lihat Selengkapnya</button></a>
                 </div>

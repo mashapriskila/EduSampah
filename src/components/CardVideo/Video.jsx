@@ -1,12 +1,11 @@
 import React from 'react';
 import axios from 'axios';
 import renderHTML from 'react-render-html';
-import "./Slider.css";
+
+import "./Video.css";
 import { MdChevronLeft, MdChevronRight} from 'react-icons/md';
 
-
-class Card extends React.Component {
-
+class Video extends React.Component {
 
     constructor( props ) {
         super( props );
@@ -25,7 +24,7 @@ class Card extends React.Component {
         componentDidMount() {
             const wordPressSiteURL = 'https://bangeco.dezign.id';
             this.setState( { loading: true }, () =>{
-                axios.get( `${wordPressSiteURL}/wp-json/wp/v2/posts?categories=6&per_page=5` )
+                axios.get( `${wordPressSiteURL}/wp-json/wp/v2/posts?categories=7&per_page=9` )
                 .then( res => {
                     if ( 200 === res.status ) {
                         if ( res.data.length ) {
@@ -42,13 +41,13 @@ class Card extends React.Component {
     }
 
         render() { 
-            const slideLeft =()=> {
-                let slider = document.getElementById("slider");
-                slider.scrollLeft = slider.scrollLeft - 500;
+            const slideVidLeft =()=> {
+                let slider = document.getElementById("sliderVid");
+                slider.scrollLeft = slider.scrollLeft - 500
         
             }
-            const slideRight = () => {
-                let slider = document.getElementById("slider");
+            const slideVidRight = () => {
+                let slider = document.getElementById("sliderVid");
                 slider.scrollLeft = slider.scrollLeft + 500;
                 
             }
@@ -56,35 +55,36 @@ class Card extends React.Component {
             return (
                 <React.Fragment>
                     { error && <div className="alert alert-danger" dangerouslySetInnerHTML={ this.createMarkup( error ) }/> }
+                <p id="video">Video</p>
                 { posts.length ? (
-                <div id="sliderInfo-container">   
-                <MdChevronLeft size={40} className="slider-icon left" onClick ={slideLeft}/>
-                <div id="slider">
+                <div id="sliderVid-container">   
+                <MdChevronLeft size={40} className="slider-icon left" onClick ={slideVidLeft}/>
+                <div id="sliderVid">
                         { posts.map( post => (
                                 <div className="slider-card" key={ post.id }>
                                    <div className="card-image" style={{backgroundImage:`url(${post.better_featured_image.source_url})`}}> </div>
                                 
-                                <div className="slider-content">
-                                    <p className="title">{renderHTML( post.title.rendered )}</p>
-                                    
-                                    <p className="description">{renderHTML( post.excerpt.rendered )} </p>
-                                    <div className="btn-detail-wrap">
-                                    <a href={`/post/${post.id}`}>
-                                        <button>Selengkapnya</button>
-                                    </a>
-                                    </div>
-                                </div>
+                                <p className="title">{renderHTML( post.title.rendered )}</p>
                                 
+                                <p className="description">{renderHTML( post.excerpt.rendered )} </p>
+                                <div className="btn-detail-wrap">
+                                     <a href={`/post/${post.id}`}>
+                                    <button>Selengkapnya</button>
+                                    </a>
+                                </div>
                             </div> 
                         ))}
                     </div>
-                    <MdChevronRight size={40} className="slider-icon right" onClick = {slideRight}/>
+                    <MdChevronRight size={40} className="slider-icon right" onClick = {slideVidRight}/>
                     </div>
+
                 ) :  ''}
+                                    <div className="btn-more-wrap">
+                    <a href="/AllEdukasi"><button>Lihat Selengkapnya</button></a>
+                    </div>
             </React.Fragment>
             );
         }
 }
-
-
-export default Card;
+ 
+export default Video;

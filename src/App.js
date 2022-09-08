@@ -16,6 +16,7 @@ import SinglePost from './pages/SinglePost1/SinglePost';
 import EducationPage from './pages/AllEducation/EducationPage.js';
 import DetailDonasi from './components/PageDetailDonasi';
 import VideoPage from './pages/VideoPage/VideoPage';
+import Video from './components/CardVideo/Video';
 
 
 function App() {
@@ -26,9 +27,11 @@ function App() {
         <Route exact path='/'>
           <Hero />
           <TableComponent />
-          <InfoDonasi/>
-          <Berita/>
           <Education />
+          <Berita/>
+          <InfoDonasi/>
+          <Video/>
+          <PageAboutUs/>
         </Route>
         <Route exact path="/post/:id" component={SinglePost} />
         <Route path='/AllEdukasi'>
