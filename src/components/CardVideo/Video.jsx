@@ -24,7 +24,7 @@ class Video extends React.Component {
         componentDidMount() {
             const wordPressSiteURL = 'https://bangeco.dezign.id';
             this.setState( { loading: true }, () =>{
-                axios.get( `${wordPressSiteURL}/wp-json/wp/v2/posts?categories=7&per_page=9` )
+                axios.get( `${wordPressSiteURL}/wp-json/wp/v2/posts?categories=7&per_page=6` )
                 .then( res => {
                     if ( 200 === res.status ) {
                         if ( res.data.length ) {
