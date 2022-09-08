@@ -1,13 +1,13 @@
 
 .section{
 	width: 100%;
-	min-height: 100vh;
+	min-height: 70vh;
 }
 .container{
 	width: 80%;
 	display: block;
 	margin:auto;
-	padding-top: 100px;
+	padding-top: 70px;
 }
 .homeAboutUs{
 	float: left;

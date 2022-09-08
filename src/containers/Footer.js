@@ -13,17 +13,6 @@ export function FooterContainer() {
                 <Footer.Row>
                     <Footer.Column1>
                         <Footer.Title><img src={require("../assets/Logo/EduSampah.png")} alt="" /></Footer.Title>
-                        <Footer.Link>EduSampah adalah sebuah website yang bertujuan untuk memberikan edukasi tentang pengelolaan sampah dengan baik dan informasi terkini seputar sampah kepada masyarakat. Mulai dari edukasi mengenai cara pemisahan limbah atau sampah yang reusable dan zero waste, cara penerapan zero waste lifestyle hingga dampak-dampak positif dan negatif yang akan diterima kita sebagai manusia dan lingkungan.</Footer.Link>
-                    </Footer.Column1>
-                    <Footer.Column2>
-                        <Footer.Title>MENU</Footer.Title>
-                        <Footer.Link href="./">Beranda</Footer.Link>
-                        <Footer.Link href="#edukasi">Edukasi</Footer.Link>
-                        <Footer.Link href="#berita">Berita</Footer.Link>
-                        <Footer.Link href="./ReqDonation">Donasi</Footer.Link>
-                        <Footer.Link href="./PageAboutUs">Tentang Kami</Footer.Link>
-                    </Footer.Column2>
-                    <Footer.Column3>
                         <Footer.Title>HUBUNGI KAMI</Footer.Title>
                         <Footer.Link>Telp: 08123456789</Footer.Link>
                         <Footer.Link>Email: edusampah@email.com</Footer.Link>
@@ -34,7 +23,19 @@ export function FooterContainer() {
                             <Footer.Column5><Footer.Link href="https://www.instagram.com/"><InstagramIcon fontSize='medium'/></Footer.Link></Footer.Column5>
                             <Footer.Column5><Footer.Link href="https://www.linkedin.com/"><LinkedInIcon fontSize='medium'/></Footer.Link></Footer.Column5>
                         </Footer.Wrapper1>
-                    </Footer.Column3>
+                    </Footer.Column1>
+                    <Footer.Column2>
+                        <Footer.Title>MENU</Footer.Title>
+                        <Footer.Link href="./">Beranda</Footer.Link>
+                        <Footer.Link href="#edukasi">Edukasi</Footer.Link>
+                        <Footer.Link href="#berita">Berita</Footer.Link>
+                         <Footer.Link href="./VideoPage">Video</Footer.Link>
+                        <Footer.Link href="./ReqDonation">Donasi</Footer.Link>
+                        <Footer.Link href="./PageAboutUs">Tentang Kami</Footer.Link>
+                    </Footer.Column2>
+                    {/* <Footer.Column3>
+                        
+                    </Footer.Column3> */}
                 </Footer.Row>
             </Footer.Wrapper>
 

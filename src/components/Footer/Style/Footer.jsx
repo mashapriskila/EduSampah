@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  margin-top: 10px;
+  margin-top: 0px;
   padding: 50px 180px 10px 180px;
   background-color: #219653;
   @media (max-width: 1000px) {
@@ -52,7 +52,7 @@ export const Column4 = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-top: 25px;
+  margin-top: 0px;
 `;
 
 export const Wrapper1 = styled.div`
@@ -66,7 +66,7 @@ export const Column5 = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin-top: 20px;
+  margin-top: 0px;
   margin-right: 20px;
 `;
 
