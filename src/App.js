@@ -17,6 +17,7 @@ import EducationPage from './pages/AllEducation/EducationPage.js';
 import DetailDonasi from './components/PageDetailDonasi';
 import VideoPage from './pages/VideoPage/VideoPage';
 import Video from './components/CardVideo/Video';
+import HomeAboutUs from './components/HomeAboutUs';
 
 
 function App() {
@@ -31,7 +32,7 @@ function App() {
           <Berita/>
           <InfoDonasi/>
           <Video/>
-          <PageAboutUs/>
+          <HomeAboutUs/>
         </Route>
         <Route exact path="/post/:id" component={SinglePost} />
         <Route path='/AllEdukasi'>
