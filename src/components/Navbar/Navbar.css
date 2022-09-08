@@ -171,3 +171,7 @@ nav .dropdown:hover .dropdown-content {
     }
 
 }
+
+nav i {
+    padding-left: 5px;
+}

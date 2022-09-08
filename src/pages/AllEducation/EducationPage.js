@@ -57,7 +57,7 @@ createMarkup = ( data ) => ({
                 <Box margin='100px 100px' sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant="h1"
 					style={{margin: '30px auto', fontSize: 30, fontWeight: 700, textAlign: ''}}
-                    >All Educations
+                    >Artikel Edukasi Sampah
                     </Typography>
                    <Grid container spacing={2}>
                         { posts.map( post => (

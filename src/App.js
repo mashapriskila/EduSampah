@@ -14,7 +14,6 @@ import TableComponent from './components/Table';
 import Education from './components/Education'
 import SinglePost from './pages/SinglePost1/SinglePost';
 import EducationPage from './pages/AllEducation/EducationPage.js';
-import DetailDonasi from './components/PageDetailDonasi';
 import VideoPage from './pages/VideoPage/VideoPage';
 import Video from './components/CardVideo/Video';
 import HomeAboutUs from './components/HomeAboutUs';
@@ -43,9 +42,6 @@ function App() {
         </Route>
         <Route path='/VideoPage'>
           <VideoPage />
-        </Route>
-        <Route path='/PageDetailDonasi'>
-          <DetailDonasi />
         </Route>
         <Route path='/ReqDonation'>
           <ReqDonation />

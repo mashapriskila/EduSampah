@@ -21,7 +21,7 @@
                             </button>
                             <div className="dropdown-content">
                                 <li><a href="./ReqDonation">Ajukan Donasi</a></li>
-                                <li><a href="./AllDonationPage">Data Donasi</a></li>
+                                <li><a href="./AllDonationPage">Info Donasi</a></li>
                             </div>
                         </div>
                         <li><a href="./PageAboutUs">TENTANG KAMI</a></li>

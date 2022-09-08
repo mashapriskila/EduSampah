@@ -30,7 +30,7 @@ export function FooterContainer() {
                         <Footer.Link href="#edukasi">Edukasi</Footer.Link>
                         <Footer.Link href="#berita">Berita</Footer.Link>
                          <Footer.Link href="./VideoPage">Video</Footer.Link>
-                        <Footer.Link href="./ReqDonation">Donasi</Footer.Link>
+                        <Footer.Link href="./AllDonationPage">Donasi</Footer.Link>
                         <Footer.Link href="./PageAboutUs">Tentang Kami</Footer.Link>
                     </Footer.Column2>
                     {/* <Footer.Column3>

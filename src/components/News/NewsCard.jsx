@@ -43,12 +43,12 @@ class NewsCard extends React.Component {
 
         render() { 
             const slideNewsLeft =()=> {
-                var slider = document.getElementById("sliderNews");
+                let slider = document.getElementById("sliderNews");
                 slider.scrollLeft = slider.scrollLeft - 500;
         
             }
             const slideNewsRight = () => {
-                var slider = document.getElementById("sliderNews");
+                let slider = document.getElementById("sliderNews");
                 slider.scrollLeft = slider.scrollLeft + 500;
                 
             }
