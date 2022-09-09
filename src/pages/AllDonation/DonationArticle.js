@@ -64,7 +64,7 @@ createMarkup = ( data ) => ({
                         { posts.map( post => (
                             <Grid item xl={3} md={4} sm={6} xs={12}>
                                 {/* <Card key={ post.id } sx={{ maxWidth: 345 }}> */}
-                                <Card key={ post.id }>
+                                <Card key={ post.id } style={{ height: '100%' }} >
                                     <CardMedia
                                     component="img"
                                     height="140"

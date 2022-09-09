@@ -64,7 +64,7 @@ createMarkup = ( data ) => ({
                    <Grid container spacing={2}>
                         { posts.map( post => (
                             <Grid item xl={3} md={4} sm={6} xs={12}>
-                                <Card key={ post.id }>
+                                <Card key={ post.id } style={{ height: '100%' }} >
                                     <CardMedia
                                     component="img"
                                     height="140"
@@ -81,9 +81,17 @@ createMarkup = ( data ) => ({
                                     </Typography>
                                     </CardContent>
                                     <CardActions>
-                                         <a href={`/post/${post.id}`}>
-                                        <Button size="small">Selengkapnya</Button>
-                                        </a>
+                                            <Box
+                                            m={1}
+                                            //margin
+                                            display="flex"
+                                            justifyContent="flex-end"
+                                            alignItems="flex-end"
+                                            >
+                                                <a href={`/post/${post.id}`}>
+                                                <Button size="small">Selengkapnya</Button>
+                                                </a>
+                                            </Box>                                        
                                     </CardActions>
                             </Card> 
                             </Grid>
