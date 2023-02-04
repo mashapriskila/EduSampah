@@ -29,7 +29,7 @@ createMarkup = ( data ) => ({
 });
 
     componentDidMount() {
-        const wordPressSiteURL = 'https://bangeco.dezign.id';
+        const wordPressSiteURL = 'https://blog.bangeco.my.id/';
         this.setState( { loading: true }, () =>{
             axios.get( `${wordPressSiteURL}/wp-json/wp/v2/posts?categories=6` )
             .then( res => {

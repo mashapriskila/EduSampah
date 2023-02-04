@@ -27,7 +27,8 @@ class SinglePost extends React.Component {
 	});
 
 	componentDidMount() {
-        const wordPressSiteURL = 'https://bangeco.dezign.id';
+		const newLocal = 'https://blog.bangeco.my.id/';
+        const wordPressSiteURL = newLocal;
         
 		this.setState( { loading: true }, () => {
 			axios.get( `${wordPressSiteURL}/wp-json/wp/v2/posts/${this.props.match.params.id}` )
