@@ -29,7 +29,8 @@ createMarkup = ( data ) => ({
 });
 
     componentDidMount() {
-        const wordPressSiteURL = 'https://blog.bangeco.my.id/';
+        const newLocal = 'https://blog.bangeco.my.id/';
+        const wordPressSiteURL = newLocal;
         this.setState( { loading: true }, () =>{
             axios.get( `${wordPressSiteURL}/wp-json/wp/v2/posts?categories=6` )
             .then( res => {
